@@ -1,0 +1,210 @@
+/* global.css */
+@font-face {
+    font-family: 'LuckyFellas';
+    src: url('./assets/fonts/LuckyFellas.otf') format('opentype');
+  }
+  
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+ @font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+ @font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+
+body, .ant-btn, .ant-menu, .ant-typography, .ant-input, .ant-dropdown-menu {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-input {
+    margin-bottom: 10px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+
+/* Add a click effect for the primary button */
+.ant-btn.ant-btn-primary {
+  background-color: #00724A !important;
+  border-color: #f0f7f2 !important;
+  color: white !important;
+  margin-right: 8px !important;
+  transition: box-shadow 0.2s ease; /* Add a transition for a smooth effect */
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045); /* Add a subtle shadow effect */
+}
+
+.ant-btn.ant-btn-primary:hover {
+  background-color: #005a38 !important; /* Hover color */
+}
+
+
+/* Add a click effect for the primary button */
+.ant-btn.ant-btn-cancel {
+background-color: #cccccc !important; /* Light gray background */
+border-color: #cccccc !important; /* Matching border color */
+color: #333333 !important; /* Dark gray text for readability */
+margin-right: 8px !important;
+transition: box-shadow 0.2s ease; /* Add a transition for a smooth effect */
+box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045); /* Add a subtle shadow effect */
+}
+
+.ant-btn.ant-btn-cancel:hover {
+background-color: #bbbbbb !important; /* Slightly darker gray on hover */
+border-color: #7e7e7e !important;
+}
+
+
+.ant-btn.ant-btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.045); /* Remove the shadow when button is clicked */
+}
+
+.ant-btn.ant-btn-cancel:active {
+box-shadow: 0 0 0 rgba(0, 0, 0, 0.045); /* Remove the shadow when button is clicked */
+}
+
+.custom-header {
+  width: 1px; /* Set the desired width */
+}
+
+.ant-table {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important; /* Adjust this value as needed */
+}
+
+
+/* Styles for the link */
+.link-style {
+font-weight: bold; /* Make the font bold */
+color: #007bff; /* Standard blue color for links */
+text-decoration: none; /* Remove underline by default */
+}
+
+.link-style:hover {
+text-decoration: underline; /* Underline on hover */
+}
+
+
+.montserrat-form .ant-form-item-label > label,
+.montserrat-form .ant-select-selector,
+.montserrat-form .ant-input,
+.montserrat-form .ant-picker-input input {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Applying Montserrat to various input elements and dropdowns universally */
+.ant-form-item-label > label,
+.ant-select-selector,
+.ant-input,
+.ant-picker-input input,
+select,
+.ant-select-dropdown {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+.ant-form-item-control-input-content .ant-input[disabled] {
+  color: black !important; /* Ensure text color is black */
+  background-color: transparent !important; /* Make background transparent */
+  border: 0 !important; /* Remove border */
+  box-shadow: none !important; /* Remove any box shadow if present */
+  font-weight: bold !important; /* Make text bold */
+  cursor: not-allowed !important; /* Change hover cursor to indicate non-interactivity */
+}
+
+/* Styling for the Select component and selected item only when disabled */
+.ant-select-disabled .ant-select-selector,
+.ant-select-disabled .ant-select-selector .ant-select-selection-item {
+  color: black !important; /* Ensure text color is black */
+  font-weight: bold !important; /* Apply bold styling */
+  background-color: transparent !important; /* Make background transparent */
+  border: 0 !important; /* Remove the border */
+  box-shadow: none !important; /* Remove any box shadow */
+  cursor: not-allowed !important; /* Indicate non-interactivity */
+}
+
+/* Hide the dropdown arrow only when the Select is disabled */
+.ant-select-disabled .ant-select-arrow {
+  display: none !important;
+}
+
+
+/* Styling for the Checkbox component and its label only when disabled */
+.ant-checkbox-wrapper-disabled .ant-checkbox-inner,
+.ant-checkbox-wrapper-disabled .ant-checkbox + span {
+  color: black !important; /* Ensure text color is black for the label */
+
+  background-color: transparent !important; /* Make background transparent */
+
+}
+
+/* Increase padding for all cells in the Ant Design table */
+.ant-table-cell {
+padding-left: 16px !important; /* Increase left padding */
+padding-right: 16px !important; /* Increase right padding */
+}
+
+/* Pagination on left */
+.ant-table-pagination {
+width: 100%;
+display: flex;
+justify-content: flex-start; /* Aligns the pagination to the left */
+}
+
+div.ant-table-pagination {
+width: 100%;
+display: flex;
+justify-content: flex-start !important; /* Force override if necessary */
+}
+
+.ant-btn, .ant-modal, .ant-select, .ant-upload, .ant-notification, .ant-spin, .ant-dropdown, .ant-link {
+font-family: 'Montserrat', sans-serif !important;
+}
+
+body .ant-dropdown {
+font-family: 'Montserrat', sans-serif !important;
+}
+
+html, body {
+font-family: 'Montserrat', sans-serif !important;
+}
+
